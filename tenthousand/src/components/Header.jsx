@@ -4,19 +4,18 @@ import Time from "../img/Frame 12.png";
 import Text from "../img/Frame.png";
 
 const Wrapper = styled.header`
-  /* border: 1px solid blue; */
   text-align: center;
   padding-top: 140px;
   position: relative;
+  max-width: 780px;
+  margin: auto;
 `;
 const LogoTime = styled.img`
-  border: 1px solid red;
   width: 222px;
   height: 225px;
 `;
 
 const LogoText = styled.img`
-  border: 1px solid blue;
   width: 564px;
   height: 112px;
   position: absolute;
@@ -30,8 +29,8 @@ export default function Header() {
   return (
     <>
       <Wrapper>
-        <LogoTime src={Time}></LogoTime>
-        <LogoText src={Text}></LogoText>
+        <LogoTime src={Time} alt={"시계모양 이미지"}></LogoTime>
+        <LogoText src={Text} alt={"1만시간의법칙 이미지"}></LogoText>
       </Wrapper>
     </>
   );

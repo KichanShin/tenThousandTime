@@ -2,6 +2,8 @@ import styled, { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
+
 const GlobalStyle = createGlobalStyle`
 ${reset}
 @font-face {
@@ -17,6 +19,12 @@ ${reset}
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap') format('woff');
+  font-weight: normal;
+    font-style: normal;
+}
 * {
     box-sizing: border-box;
     }
@@ -26,16 +34,13 @@ ${reset}
 
 `;
 
-const Footer = styled.footer``;
-
 function App() {
   return (
     <>
       <GlobalStyle />
       <Header />
-
-      <Main>z</Main>
-      <Footer>z</Footer>
+      <Main></Main>
+      <Footer></Footer>
     </>
   );
 }
